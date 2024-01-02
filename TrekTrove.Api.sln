@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5E139008-573E-444D-A903-EBCB18962E05}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{9C40F995-B011-4B6C-AEB4-63AA2ED329ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-entrypoint", "1-entrypoint", "{CA23F009-D787-4919-AE6A-1F2AA2B3AA9D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-modules", "2-modules", "{02B9E8BA-66A8-413D-9B50-7C682F57C5B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-entrypoint", "1-entrypoint", "{F412D405-AFD9-49B3-9DB6-47217DD1B112}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-modules", "2-modules", "{1B57E51D-A510-4BA4-9771-A0BF604823C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrekTrove.Api", "src\TrekTrove.Api\TrekTrove.Api.csproj", "{55DECE13-A598-4BDF-934E-5F515591E233}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrekTrove.Api.Modules.CustomerModule", "modules\src\TrekTrove.Api.Modules.CustomerModule\TrekTrove.Api.Modules.CustomerModule.csproj", "{1E23712A-FDE2-4D56-822A-C9C41C956B6E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrekTrove.Api.Modules.CustomerModule.Tests", "modules\tests\TrekTrove.Api.Modules.CustomerModule.Tests\TrekTrove.Api.Modules.CustomerModule.Tests.csproj", "{8A844B75-4DA9-4777-8CD9-F75E6B285D2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55DECE13-A598-4BDF-934E-5F515591E233}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55DECE13-A598-4BDF-934E-5F515591E233}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55DECE13-A598-4BDF-934E-5F515591E233}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55DECE13-A598-4BDF-934E-5F515591E233}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E23712A-FDE2-4D56-822A-C9C41C956B6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E23712A-FDE2-4D56-822A-C9C41C956B6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E23712A-FDE2-4D56-822A-C9C41C956B6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E23712A-FDE2-4D56-822A-C9C41C956B6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A844B75-4DA9-4777-8CD9-F75E6B285D2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A844B75-4DA9-4777-8CD9-F75E6B285D2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A844B75-4DA9-4777-8CD9-F75E6B285D2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A844B75-4DA9-4777-8CD9-F75E6B285D2E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CA23F009-D787-4919-AE6A-1F2AA2B3AA9D} = {5E139008-573E-444D-A903-EBCB18962E05}
+		{02B9E8BA-66A8-413D-9B50-7C682F57C5B0} = {5E139008-573E-444D-A903-EBCB18962E05}
+		{F412D405-AFD9-49B3-9DB6-47217DD1B112} = {9C40F995-B011-4B6C-AEB4-63AA2ED329ED}
+		{1B57E51D-A510-4BA4-9771-A0BF604823C1} = {9C40F995-B011-4B6C-AEB4-63AA2ED329ED}
+		{55DECE13-A598-4BDF-934E-5F515591E233} = {CA23F009-D787-4919-AE6A-1F2AA2B3AA9D}
+		{1E23712A-FDE2-4D56-822A-C9C41C956B6E} = {02B9E8BA-66A8-413D-9B50-7C682F57C5B0}
+		{8A844B75-4DA9-4777-8CD9-F75E6B285D2E} = {1B57E51D-A510-4BA4-9771-A0BF604823C1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C073ACEE-19DF-4270-A4A9-C1B49F24EDB6}
+	EndGlobalSection
+EndGlobal
