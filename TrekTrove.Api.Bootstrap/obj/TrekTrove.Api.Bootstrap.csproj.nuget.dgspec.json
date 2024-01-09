@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\iancm\\source\\repos\\TrekTrove.Api\\src\\TrekTrove.Api\\TrekTrove.Api.csproj": {}
+    "C:\\Users\\iancm\\source\\repos\\TrekTrove.Api\\TrekTrove.Api.Bootstrap\\TrekTrove.Api.Bootstrap.csproj": {}
   },
   "projects": {
-    "C:\\Users\\iancm\\source\\repos\\TrekTrove.Api\\src\\TrekTrove.Api\\TrekTrove.Api.csproj": {
+    "C:\\Users\\iancm\\source\\repos\\TrekTrove.Api\\TrekTrove.Api.Bootstrap\\TrekTrove.Api.Bootstrap.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\iancm\\source\\repos\\TrekTrove.Api\\src\\TrekTrove.Api\\TrekTrove.Api.csproj",
-        "projectName": "TrekTrove.Api",
-        "projectPath": "C:\\Users\\iancm\\source\\repos\\TrekTrove.Api\\src\\TrekTrove.Api\\TrekTrove.Api.csproj",
+        "projectUniqueName": "C:\\Users\\iancm\\source\\repos\\TrekTrove.Api\\TrekTrove.Api.Bootstrap\\TrekTrove.Api.Bootstrap.csproj",
+        "projectName": "TrekTrove.Api.Bootstrap",
+        "projectPath": "C:\\Users\\iancm\\source\\repos\\TrekTrove.Api\\TrekTrove.Api.Bootstrap\\TrekTrove.Api.Bootstrap.csproj",
         "packagesPath": "C:\\Users\\iancm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\iancm\\source\\repos\\TrekTrove.Api\\src\\TrekTrove.Api\\obj\\",
+        "outputPath": "C:\\Users\\iancm\\source\\repos\\TrekTrove.Api\\TrekTrove.Api.Bootstrap\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\iancm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://www.myget.org/F/imagesharp/api/v3/index.json": {}
         },
@@ -42,23 +41,35 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "FluentValidator": {
+            "AspNetCore.HealthChecks.SqlServer": {
               "target": "Package",
-              "version": "[2.0.4, )"
+              "version": "[7.0.0, )"
             },
-            "MediatR": {
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[12.2.0, )"
+              "version": "[11.1.0, )"
             },
-            "Microsoft.AspNetCore.Mvc.Versioning": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer": {
               "target": "Package",
               "version": "[5.1.0, )"
             },
-            "Microsoft.AspNetCore.OpenApi": {
+            "Microsoft.FeatureManagement.AspNetCore": {
               "target": "Package",
-              "version": "[7.0.7, )"
+              "version": "[2.6.1, )"
             },
-            "Swashbuckle.AspNetCore": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
               "target": "Package",
               "version": "[6.5.0, )"
             }
@@ -75,9 +86,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
