@@ -1,12 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Routing;
+using Microsoft.Extensions.DependencyInjection;
+using System.Diagnostics.CodeAnalysis;
 
 namespace TrekTrove.Api.Bootstrap.Bootstrapers
 {
-    internal class RouteBootstrap
+    [ExcludeFromCodeCoverage]
+    public static class RouteBootstrap
     {
+        public static IServiceCollection ConfigureRoutes(
+           this IServiceCollection services)
+        {
+            services.Configure<RouteOptions>(options =>
+            {
+                options.LowercaseUrls = true;
+                options.LowercaseQueryStrings = true;
+            });
+
+            return services;
+        }
     }
 }

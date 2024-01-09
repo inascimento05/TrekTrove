@@ -1,0 +1,192 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\iancm\\source\\repos\\TrekTrove.Api\\modules\\tests\\TrekTrove.Api.Modules.SharedModule.Tests\\TrekTrove.Api.Modules.SharedModule.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\iancm\\source\\repos\\TrekTrove.Api\\modules\\src\\TrekTrove.Api.Modules.SharedModule\\TrekTrove.Api.Modules.SharedModule.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\iancm\\source\\repos\\TrekTrove.Api\\modules\\src\\TrekTrove.Api.Modules.SharedModule\\TrekTrove.Api.Modules.SharedModule.csproj",
+        "projectName": "TrekTrove.Api.Modules.SharedModule",
+        "projectPath": "C:\\Users\\iancm\\source\\repos\\TrekTrove.Api\\modules\\src\\TrekTrove.Api.Modules.SharedModule\\TrekTrove.Api.Modules.SharedModule.csproj",
+        "packagesPath": "C:\\Users\\iancm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\iancm\\source\\repos\\TrekTrove.Api\\modules\\src\\TrekTrove.Api.Modules.SharedModule\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\iancm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/imagesharp/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\iancm\\source\\repos\\TrekTrove.Api\\modules\\src\\TrekTrove.Api.Modules.SharedModule\\TrekTrove.Api.Modules.Shared.csproj": {
+                "projectPath": "C:\\Users\\iancm\\source\\repos\\TrekTrove.Api\\modules\\src\\TrekTrove.Api.Modules.SharedModule\\TrekTrove.Api.Modules.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AspNetCore.HealthChecks.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "FluentValidator": {
+              "target": "Package",
+              "version": "[2.0.4, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.FeatureManagement.AspNetCore": {
+              "target": "Package",
+              "version": "[2.5.1, )"
+            },
+            "Refit": {
+              "target": "Package",
+              "version": "[6.3.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\iancm\\source\\repos\\TrekTrove.Api\\modules\\tests\\TrekTrove.Api.Modules.SharedModule.Tests\\TrekTrove.Api.Modules.SharedModule.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\iancm\\source\\repos\\TrekTrove.Api\\modules\\tests\\TrekTrove.Api.Modules.SharedModule.Tests\\TrekTrove.Api.Modules.SharedModule.Tests.csproj",
+        "projectName": "TrekTrove.Api.Modules.SharedModule.Tests",
+        "projectPath": "C:\\Users\\iancm\\source\\repos\\TrekTrove.Api\\modules\\tests\\TrekTrove.Api.Modules.SharedModule.Tests\\TrekTrove.Api.Modules.SharedModule.Tests.csproj",
+        "packagesPath": "C:\\Users\\iancm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\iancm\\source\\repos\\TrekTrove.Api\\modules\\tests\\TrekTrove.Api.Modules.SharedModule.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\iancm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/imagesharp/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\iancm\\source\\repos\\TrekTrove.Api\\modules\\src\\TrekTrove.Api.Modules.SharedModule\\TrekTrove.Api.Modules.SharedModule.csproj": {
+                "projectPath": "C:\\Users\\iancm\\source\\repos\\TrekTrove.Api\\modules\\src\\TrekTrove.Api.Modules.SharedModule\\TrekTrove.Api.Modules.SharedModule.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.11.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.5.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.4, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

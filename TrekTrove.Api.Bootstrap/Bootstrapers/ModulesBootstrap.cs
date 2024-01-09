@@ -1,12 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using System.Diagnostics.CodeAnalysis;
 
 namespace TrekTrove.Api.Bootstrap.Bootstrapers
 {
-    internal class ModulesBootstrap
+    [ExcludeFromCodeCoverage]
+    public static class ModulesBootstrap
     {
+        public static IServiceCollection ConfigureModules(
+            this IServiceCollection services, 
+            IConfiguration configuration)
+        {
+            return services;
+        }
+
+        public static IApplicationBuilder ConfigureModules(
+            this IApplicationBuilder app,
+            IWebHostEnvironment env)
+        {
+            return app;
+        }
     }
 }

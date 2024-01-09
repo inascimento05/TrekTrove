@@ -23,7 +23,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrekTrove.Api.Modules.Custo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-infrastructure", "3-infrastructure", "{B8390FAF-DB77-4063-B6D5-FF0AD21EA8F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrekTrove.Api.Bootstrap", "TrekTrove.Api.Bootstrap\TrekTrove.Api.Bootstrap.csproj", "{100480EC-B424-4131-8526-4206E5FFEA6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrekTrove.Api.Bootstrap", "TrekTrove.Api.Bootstrap\TrekTrove.Api.Bootstrap.csproj", "{100480EC-B424-4131-8526-4206E5FFEA6B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrekTrove.Api.Modules.SharedModule", "modules\src\TrekTrove.Api.Modules.SharedModule\TrekTrove.Api.Modules.SharedModule.csproj", "{F9438D38-246D-47DC-8C5A-8EE203E7E48D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrekTrove.Api.Modules.SharedModule.Tests", "modules\tests\TrekTrove.Api.Modules.SharedModule.Tests\TrekTrove.Api.Modules.SharedModule.Tests.csproj", "{21841C74-F93E-461B-8149-A8E555FD634C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +51,14 @@ Global
 		{100480EC-B424-4131-8526-4206E5FFEA6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{100480EC-B424-4131-8526-4206E5FFEA6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{100480EC-B424-4131-8526-4206E5FFEA6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9438D38-246D-47DC-8C5A-8EE203E7E48D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9438D38-246D-47DC-8C5A-8EE203E7E48D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9438D38-246D-47DC-8C5A-8EE203E7E48D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9438D38-246D-47DC-8C5A-8EE203E7E48D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21841C74-F93E-461B-8149-A8E555FD634C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21841C74-F93E-461B-8149-A8E555FD634C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21841C74-F93E-461B-8149-A8E555FD634C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21841C74-F93E-461B-8149-A8E555FD634C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,6 +73,8 @@ Global
 		{8A844B75-4DA9-4777-8CD9-F75E6B285D2E} = {1B57E51D-A510-4BA4-9771-A0BF604823C1}
 		{B8390FAF-DB77-4063-B6D5-FF0AD21EA8F5} = {5E139008-573E-444D-A903-EBCB18962E05}
 		{100480EC-B424-4131-8526-4206E5FFEA6B} = {B8390FAF-DB77-4063-B6D5-FF0AD21EA8F5}
+		{F9438D38-246D-47DC-8C5A-8EE203E7E48D} = {02B9E8BA-66A8-413D-9B50-7C682F57C5B0}
+		{21841C74-F93E-461B-8149-A8E555FD634C} = {1B57E51D-A510-4BA4-9771-A0BF604823C1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C073ACEE-19DF-4270-A4A9-C1B49F24EDB6}

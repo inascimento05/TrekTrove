@@ -1,12 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.Extensions.DependencyInjection;
+using System.Diagnostics.CodeAnalysis;
+using TrekTrove.Api.Bootstrap.Filters;
 
 namespace TrekTrove.Api.Bootstrap.Bootstrapers
 {
-    internal class MVCBootstrap
+    [ExcludeFromCodeCoverage]
+    public static class MvcBootstrap
     {
+        public static IServiceCollection ConfigureMVC(this IServiceCollection services)
+        {
+            services.AddMvc(options =>
+            {
+                options.Filters.AddService<DeserializeHeadersFilter>();
+                options.Filters.AddService<LogActionFilter>();
+            });
+
+            services.AddScoped<LogActionFilter>();
+
+            return services;
+        }
     }
 }

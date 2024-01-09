@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Mvc.Filters;
+using System.Diagnostics.CodeAnalysis;
 
 namespace TrekTrove.Api.Bootstrap.Filters
 {
-    internal class DeserializeHeadersFilter
+    [ExcludeFromCodeCoverage]
+    public class DeserializeHeadersFilter : IAsyncActionFilter
     {
+        public async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+        {
+            await next();
+        }
     }
 }
