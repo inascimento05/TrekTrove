@@ -4,20 +4,27 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
+using System.Diagnostics.CodeAnalysis;
 using System.Net.Mime;
 using System.Text.Json;
 
 namespace TrekTrove.Api.Modules.SharedModule.Infrastructure.Bootstrapers
 {
+    [ExcludeFromCodeCoverage]
     public static class HealthCheckBootstrap
     {
+        private const string MODULE_NAME = "Shared";
+        private const string HEALTHCHECK_PING_PATHSTRING = $"/{MODULE_NAME}/ping";
+        private const string HEALTHCHECK_PONG_PATHSTRING = $"/{MODULE_NAME}/pong";
+
         public static IServiceCollection ConfigureHealthCheck(
             this IServiceCollection services,
             IConfiguration configuration)
         {
+            var connectionString = configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
             services.AddHealthChecks()
                 .AddSqlServer(
-                    configuration.GetConnectionString("Shared"),
+                    connectionString,
                     name: "SharedModule"
                 );
 
@@ -26,10 +33,10 @@ namespace TrekTrove.Api.Modules.SharedModule.Infrastructure.Bootstrapers
 
         public static IApplicationBuilder ConfigureHealthCheck(this IApplicationBuilder app)
         {
-            app.UseHealthChecks("/Shared/ping");
+            app.UseHealthChecks(HEALTHCHECK_PING_PATHSTRING);
 
             app.UseHealthChecks(
-                "/Shared/pong",
+                HEALTHCHECK_PONG_PATHSTRING,
                 new HealthCheckOptions() { ResponseWriter = WritePongResultAsync });
 
             return app;

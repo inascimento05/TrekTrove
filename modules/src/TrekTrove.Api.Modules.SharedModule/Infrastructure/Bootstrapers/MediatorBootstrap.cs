@@ -1,24 +1,16 @@
 ﻿using MediatR;
 using Microsoft.Extensions.DependencyInjection;
-using TrekTrove.Api.Modules.Shared.Application.Notifications;
-using TrekTrove.Api.Modules.SharedModule.Application.Mediators.SharedOperations.Create;
-using TrekTrove.Api.Modules.SharedModule.Application.Mediators.SharedOperations.Dtos;
-using TrekTrove.Api.Modules.SharedModule.Application.Mediators.SharedOperations.GetAll;
-using TrekTrove.Api.Modules.SharedModule.Application.Mediators.SharedOperations.GetById;
-using TrekTrove.Api.Modules.SharedModule.Application.Mediators.SharedOperations.RemoveById;
-using TrekTrove.Api.Modules.SharedModule.Application.Mediators.SharedOperations.Update;
+using System.Diagnostics.CodeAnalysis;
+using TrekTrove.Api.Modules.SharedModule.Application.Mediators;
 
 namespace TrekTrove.Api.Modules.SharedModule.Infrastructure.Bootstrapers
 {
+    [ExcludeFromCodeCoverage]
     public static class MediatorBootstrap
     {
         public static IServiceCollection ConfigureMediators(this IServiceCollection services)
         {
-            services.AddTransient<IRequestHandler<CreateSharedRequest, DataResult<SharedDto>>, CreateSharedHandler>();
-            services.AddTransient<IRequestHandler<GetSharedByIdRequest, DataResult<SharedDto>>, GetSharedByIdHandler>();
-            services.AddTransient<IRequestHandler<GetAllSharedsRequest, DataResult<IEnumerable<SharedDto>>>, GetAllSharedsHandler>();
-            services.AddTransient<IRequestHandler<UpdateSharedRequest, DataResult<SharedDto>>, UpdateSharedHandler>();
-            services.AddTransient<IRequestHandler<RemoveSharedByIdRequest, DataResult<bool>>, RemoveSharedByIdHandler>();
+            services.AddMediatR(typeof(IBaseHandler<,>).Assembly);
 
             return services;
         }

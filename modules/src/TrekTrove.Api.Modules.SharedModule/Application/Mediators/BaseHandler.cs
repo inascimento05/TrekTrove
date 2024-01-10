@@ -3,6 +3,7 @@ using MediatR;
 using Refit;
 using System.Diagnostics.CodeAnalysis;
 using System.Net;
+using TrekTrove.Api.Modules.SharedModule.Application.Notifications;
 
 namespace TrekTrove.Api.Modules.SharedModule.Application.Mediators
 {
