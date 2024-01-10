@@ -2,31 +2,28 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System.Diagnostics.CodeAnalysis;
 using TrekTrove.Api.Modules.SharedModule.Infrastructure.Bootstrapers;
 
 namespace TrekTrove.Api.Modules.SharedModule.Infrastructure
 {
+    [ExcludeFromCodeCoverage]
     public static class ModuleBootstrap
     {
-        public static IServiceCollection ConfigureSharedModule(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection ConfigureShared(this IServiceCollection services, IConfiguration configuration)
         {
             services.ConfigureHealthCheck(configuration);
 
-            services.ConfigureContextDb(configuration);
             services.ConfigureClientsServices(configuration);
 
             services.ConfigureMediators();
-            services.ConfigureRepositories();
-            services.ConfigureServices();
 
             return services;
         }
 
-        public static IApplicationBuilder ConfigureSharedModule(this IApplicationBuilder app, IWebHostEnvironment env)
+        public static IApplicationBuilder ConfigureShared(this IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.ConfigureHealthCheck();
-
-            //app.MigrateDatabaseOnStartup();
 
             return app;
         }
